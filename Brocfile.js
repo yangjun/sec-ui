@@ -17,6 +17,6 @@ var app = new EmberApp();
 // please specify an object with the list of modules as keys
 // along with the exports of each module as its value.
 
-app.import('app/qunee/qunee-min.js');
+app.import('vendor/qunee/qunee-min.js');
 
 module.exports = app.toTree();

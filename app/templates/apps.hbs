@@ -1,0 +1,16 @@
+<h2>app list</h2>
+<table>
+    <tr>
+        <th>did</th>
+        <th>name</th>
+    </tr>
+
+  {{#each model}}
+    {{#link-to 'app' did tagName="tr"}}
+        <td>{{did}}</td>
+        <td>{{name}}</td>
+    {{/link-to}}
+  {{/each}}
+</table>
+
+{{outlet}}
